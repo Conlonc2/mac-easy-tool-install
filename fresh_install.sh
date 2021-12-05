@@ -2,7 +2,6 @@
 
 # Globals 
 declare -A wanted
-listed=()
 
 # Homebrew Specific
 which brew
