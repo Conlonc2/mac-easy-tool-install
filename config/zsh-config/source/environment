@@ -1,0 +1,19 @@
+
+JAVA_HOME="/usr/local/opt/openjdk/bin"
+PYTHON_HOME="/Library/Frameworks/Python.framework/Versions/3.8/bin"
+VS_CODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+HISTFILE="${HOME}/.config/zsh-config/.zsh_history"
+HISTSIZE=100
+#SAVEHIST=0
+
+
+# ---- Go Exports ---- #
+export GOPATH=$HOME/.golib
+export GOPATH=$GOPATH:$HOME/Projects
+
+# ---- JRE Export ---- #
+export CPPFLAGS="-I/usr/local/opt/openjdk/include"
+
+
+PATH="${JAVA_HOME}:${PYTHON_HOME}:${VS_CODE}:${GOPATH}/bin:${PATH}"
+export PATH

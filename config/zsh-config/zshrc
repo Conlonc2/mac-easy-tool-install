@@ -1,0 +1,14 @@
+# Set Options
+setopt promptsubst
+setopt auto_cd
+# Git Tab-Complete
+autoload -U compinit && compinit
+
+
+# Source Files
+## Theme File
+source "$HOME/.config/zsh-config/source/agnoster.zsh-theme"
+## Environment File
+source "$HOME/.config/zsh-config/source/environment"
+## Alias File
+source "$HOME/.config/zsh-config/source/alias"
