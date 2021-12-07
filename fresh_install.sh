@@ -20,7 +20,7 @@ function readConf {
 function listWanted {
 	echo "#---- Verification ----#"
 	for key value in ${(kv)wanted}; do
-		[ "$value" = "y" ] && echo "$key -> YES" || echo "$key -> SKIP"
+		[ "$key" = "y" ] && echo "${key} -> YES" || echo "${key} -> SKIP"
 	done
 	read -q "cont?Does this look correct? (y/n)"
 	echo "" 
