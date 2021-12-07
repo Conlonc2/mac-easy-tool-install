@@ -37,11 +37,11 @@ function installPhase {
 # Copy some files to the spots I like
 function copyFilesInPlace {
 	[ -d "$HOME/.config" ] || mkdir "${HOME}/.config"
-	cp -r $pwd/config/* ${HOME}/.config
-	cp -r $pwd/home/* ${HOME}/
+	cp -r "$(pwd)/config/" "${HOME}/.config"
 }
 
 # Trigger em!
 readConf
 listWanted
 installPhase
+copyFilesInPlace
